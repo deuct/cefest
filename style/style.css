@@ -1,0 +1,481 @@
+/* Import font */
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: rgb(235, 235, 235) !important;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  font-family: "Mukta", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+  /* word-spacing: 0.2rem; */
+  z-index: 100;
+}
+
+.navbar .btn-navbar {
+  border-radius: 35px;
+  padding: 7px 15px;
+  background-color: rgb(132, 52, 238);
+  border: none;
+  color: rgb(240, 238, 238);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.navbar .btn-navbar:hover {
+  background-color: rgb(93, 17, 194);
+}
+
+.navbar li a {
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: rgb(14, 67, 90) !important;
+  transition: background-color 300ms linear;
+}
+
+.navbar-fixed-top.scrolled .nav-link {
+  color: #fff !important;
+}
+/* End navbar */
+
+/* Header */
+#header .banner-image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: fill;
+}
+
+#header .transparancy {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: fill;
+  background: rgba(0, 0, 0, 0.288);
+  z-index: 1;
+}
+
+.description {
+  z-index: 2;
+  position: absolute;
+  /* width: 850px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.description h1 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.description p {
+  font-size: 1.2rem;
+  font-weight: 550;
+  margin-top: 20px;
+}
+
+.description .btn-header {
+  margin-top: 35px;
+  font-weight: 550;
+  padding: 8px 35px;
+  background-color: rgb(132, 52, 238);
+  border: none;
+}
+
+.description .btn-header:hover {
+  background-color: rgb(93, 17, 194);
+}
+
+/* End header */
+
+/* About us */
+#aboutus {
+  text-align: justify;
+  margin-top: 100vh;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.1rem;
+  /* padding: 85px; */
+  position: relative;
+}
+
+#aboutus h1 {
+  color: rgb(53, 51, 51);
+  font-weight: bold;
+}
+
+#aboutus h1:hover {
+  color: rgb(12, 104, 224);
+}
+
+#aboutus p {
+  padding-top: 25px;
+  text-align: justify;
+  font-size: 0.95rem;
+  color: rgb(37, 35, 35);
+}
+/* End About us */
+
+/* Event */
+#event {
+  width: 100%;
+  background: rgb(0, 0, 0);
+  color: white;
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+#event .buttn {
+  margin-left: 15px;
+}
+
+#event .buttn a {
+  text-decoration: none;
+}
+
+#event .buttn .btn-des {
+  background-color: rgb(83, 48, 165);
+  border: none;
+  margin-right: 5px;
+  padding: 5px 25px;
+}
+
+#event .buttn .btn-des:hover {
+  background-color: rgb(106, 65, 202);
+}
+
+#event ul li {
+  list-style-type: none;
+  margin-top: 15px;
+}
+#event ul li .icon {
+  margin-right: 5px;
+}
+
+.event-right h1 {
+  margin-left: 15px;
+}
+
+.event-right,
+.event-left {
+  margin-top: 50px;
+}
+
+.event-right h1:hover,
+.event-left h1:hover {
+  color: rgb(83, 48, 165);
+  cursor: pointer;
+}
+
+#event .poster {
+  margin-top: 15px;
+}
+
+#event .event-title {
+  font-size: 2.8rem;
+  color: rgb(231, 231, 231);
+}
+/* End event */
+
+/* Teaser */
+#teaser {
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+#teaser h1 {
+  margin-bottom: 30px;
+  color: rgb(31, 31, 31);
+  font-size: 3rem;
+}
+
+#teaser video {
+  width: 720px;
+}
+/* End Teaser */
+
+/* timeline */
+#timeline {
+  background: #000;
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+#timeline h1 {
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 45px;
+}
+
+.imag {
+  position: relative;
+  width: 10px;
+  margin-bottom: 50px;
+}
+
+.imeg {
+  display: block;
+  width: 350px;
+  height: 550px;
+  margin: auto;
+}
+
+.overlay {
+  position: absolute;
+  margin-left: 38px;
+  top: 0;
+  bottom: 0;
+  /* left: 50px; */
+  /* right: 900px; */
+  height: 100%;
+  width: 78%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgb(0, 0, 0);
+}
+
+.imag:hover .overlay {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.text-overlay {
+  color: white;
+  font-size: 2.2rem;
+  font-size: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* End timeline */
+
+/* Support */
+#support {
+  margin-top: 10px;
+}
+
+#support .sp-ttl {
+  font-weight: bold;
+  color: #020200;
+  margin-left: 150px;
+}
+
+#support h1 {
+  font-weight: bold;
+  color: #020200;
+  padding-top: 10px;
+}
+
+.sp-logo {
+  display: inline-block;
+  width: 220px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.sp-img {
+  width: 150px;
+  height: 150px;
+  transition: 0.3s ease;
+}
+
+#support .sp-title {
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgb(26, 23, 23);
+}
+
+.sp-overlay {
+  background: rgb(0, 0, 0);
+}
+
+#support .sp-logo:hover .sp-img {
+  width: 170px;
+  height: 170px;
+}
+
+#support .sp-logo:hover .sp-title {
+  color: rgb(12, 104, 224);
+}
+/* End Support */
+
+/* Medpar */
+#medpar {
+  margin-top: 25px;
+}
+
+#medpar .medpar-title {
+  font-weight: bold;
+  color: #020200;
+  padding-top: 30px;
+}
+
+#medpar .medpar-ttl {
+  margin-right: 150px;
+}
+
+#medpar .medpar-logo {
+  margin: 0 20px;
+}
+
+#medpar .medpar-atas {
+  width: 200px;
+  height: auto;
+  transition: ease 0.4s;
+}
+
+#medpar .medpar-bawah {
+  width: 200px;
+  height: auto;
+  padding-top: 80px;
+  transition: ease 0.4s;
+}
+
+#medpar .medpar-logo {
+  display: inline-block;
+}
+
+#medpar .medpar-atas:hover,
+#medpar .medpar-bawah:hover {
+  width: 220px;
+  cursor: pointer;
+}
+
+/* End Medpar */
+
+/* Footer */
+#footer {
+  margin-top: -5px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(235, 235, 235);
+  padding: 25px 25px 20px 25px;
+}
+
+#footer h1 {
+  font-size: 1.8rem;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+#footer .addr {
+  letter-spacing: 0.05rem;
+}
+
+#footer ul {
+  padding: 0 !important;
+}
+
+#footer ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+#footer ul li a {
+  text-decoration: none;
+  color: rgb(235, 235, 235);
+  font-size: 1.1rem;
+}
+
+#footer ul li a:hover {
+  color: rgb(93, 17, 194);
+}
+
+#footer ul li img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+#footer .btn-ftr {
+  background-color: rgb(83, 48, 165);
+  border: none;
+  border-radius: 2px;
+  width: 100%;
+  padding: 12px 0;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin-top: 5px;
+}
+
+#footer .btn-ftr:hover {
+  background-color: rgb(106, 65, 202);
+}
+
+#footer .copyr a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: white;
+}
+
+#footer .copyr a:hover {
+  color: rgb(83, 48, 165);
+}
+
+/* End Footer */
+
+/* Mobile */
+@media (max-width: 576px) {
+  #aboutus {
+    display: block;
+  }
+
+  #event {
+    display: block;
+  }
+
+  #event .des {
+    margin-top: 20px;
+  }
+
+  #teaser video {
+    width: 450px;
+  }
+
+  .description h1 {
+    font-size: 2.4rem;
+  }
+
+  #support .sp-ttl {
+    margin-left: 0;
+  }
+
+  #medpar .medpar-ttl {
+    margin-right: 0;
+  }
+
+  #footer h1 {
+    margin-top: 20px;
+  }
+
+  #footer .copyr {
+    margin-top: 10px;
+  }
+}
